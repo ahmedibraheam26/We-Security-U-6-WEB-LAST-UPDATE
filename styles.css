@@ -1,0 +1,73 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff !important; /* White background */
+}
+
+.navbar-brand {
+    color: #000000; /* Black text */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #000000 !important; /* Black text */
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #ffffff;
+}
+
+/* Social Media Icons */
+.list-inline-item a {
+    color: #ffffff; /* White icons */
+    background-color: #007bff; /* Blue background */
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px; /* Center vertically */
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-inline-item a:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}

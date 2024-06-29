@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berimbolo Security - About Us</title>
+    <link rel="shortcut icon" href="assets/security.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            background-color: #ffffff; /* لون الخلفية */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* ظل */
+            padding: 15px 0;
+            z-index: 1000; /* الترتيب الظاهري */
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .navbar-brand {
+            color: #000000; /* لون الخط */
+            font-weight: bold; /* نص غامق */
+        }
+        .navbar-nav {
+            margin-left: auto; /* يمين */
+        }
+        .nav-link {
+            color: #000000; /* لون الخط */
+            font-weight: bold; /* نص غامق */
+            margin-right: 15px; /* يسار */
+        }
+        .nav-link:hover {
+            color: #007bff; /* تغيير لون الخط عند التمرير */
+        }
+        section#about {
+            padding: 80px 0;
+            background-color: #ffffff;
+            padding-top: 140px; /* Adjust for fixed navbar */
+        }
+        h5.text-primary {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        h3.display-4 {
+            color: #343a40;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        p.lead {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        img.img-fluid {
+            border-radius: 8px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        img.img-fluid:hover {
+            transform: scale(1.05);
+        }
+        /* Button Styles */
+        .btn-primary {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            color: #ffffff;
+        }
+        /* Social Media Icons */
+        .list-inline-item a {
+            color: #ffffff; /* لون الأيقونات أبيض */
+            background-color: #000000; /* لون الخلفية أسود */
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        .list-inline-item a:hover {
+            color: #007bff; 
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin-bottom: 10px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #007bff;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar for About Us Page -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Berimbolo Security</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentAbout"
+            aria-controls="navbarSupportedContentAbout" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContentAbout">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- استخدام ms-auto لمحاذاة العناصر إلى اليمين -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about">
+    <div class="container">
+        <h5 class="text-primary text-center animated fadeInUp">ABOUT US</h5>
+        <h3 class="display-4 fw-bold text-center mb-5 animated fadeInUp">Who We Are</h3>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="assets/2019-security-cameras.jpg" class="img-fluid rounded animated fadeInUp" alt="About Berimbolo Security">
+            </div>
+            <div class="col-lg-6">
+                <p class="lead animated fadeInUp">We are a company dedicated to developing and promoting advanced security solutions, bringing together creative innovators with truly magical personalities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Start Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; WORK BY AHMED IBRAHEAM ABD-ELGWAD.</p>
+          
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-Q3jGmxtox0gJ4gM+NJv9rdqZq4DghZb0TphvpTMy6MD5qbhuQnFvF3dk1E+9tbx4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-JrJ/a9zv+pBwuF1kTKhsFgCyJcZw5OP+2XGHVjPJ5mGm8u6zU6n6RSw9BfIKTKfC" crossorigin="anonymous"></script>
+</body>
+</html>
